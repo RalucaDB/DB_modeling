@@ -46,5 +46,6 @@ DELETE FROM operator_drona WHERE employee_id IN
 );
 
 
-SELECT * FROM employee;
+SELECT * FROM drona;
+
 

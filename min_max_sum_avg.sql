@@ -41,5 +41,28 @@ WHERE age < 50
 GROUP BY sex
 HAVING COUNT(id)>1 AND sex='F';
 
+SELECT * FROM operator_drona;
+
+--inner join
+SELECT * FROM employee
+INNER JOIN operator_drona
+ON employee.id=operator_drona.employee_id;
+
+--left join
+SELECT * FROM employee
+LEFT OUTER JOIN operator_drona
+ON employee.id=operator_drona.employee_id;
+
+--right join
+SELECT * FROM employee
+RIGHT OUTER JOIN operator_drona
+ON employee.id=operator_drona.employee_id;
+
+--full join
+SELECT * FROM employee
+FULL JOIN operator_drona
+ON employee.id=operator_drona.employee_id;
+
+
 
 

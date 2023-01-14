@@ -138,9 +138,9 @@ WHERE e.sex='M';
 SELECT * FROM angajati_proiecte_masculin_view;
 
 SELECT COUNT(*), p.start_date "Start date" FROM employee AS e
-INNER JOIN operator_drona
+RIGHT JOIN operator_drona
 ON e.id=operator_drona.employee_id
-LEFT JOIN operator_drona_projects
+RIGHT JOIN operator_drona_projects
 ON operator_drona.id=operator_drona_projects.operator_drona_id
 RIGHT JOIN projects p
 ON operator_drona_projects.operator_drona_id=p.id
